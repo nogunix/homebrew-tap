@@ -2,7 +2,7 @@ class UsbWakeupBlocker < Formula
   desc "Prevent USB devices from waking your system from sleep"
   homepage "https://github.com/nogunix/usb-wakeup-blocker"
   url "https://github.com/nogunix/usb-wakeup-blocker/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "6035aea59a9bdf4e7ec51283d35ae3ba6d237cea766850d693e1e1f23d969deb"
+  sha256 "a3f442b966ac54f37a9bfac864a1089b378f5ee553e1358366b2ad12bf2877e3"
   license "MIT"
 
   depends_on "bash" => :build
@@ -25,10 +25,6 @@ class UsbWakeupBlocker < Formula
     <<~EOS
       To start the daemon (blocks mice from waking the system by default):
         sudo brew services start usb-wakeup-blocker
-
-      Or load the launchd plist manually:
-        sudo cp #{opt_prefix}/com.usb-wakeup-blocker.plist /Library/LaunchDaemons/
-        sudo launchctl load -w /Library/LaunchDaemons/com.usb-wakeup-blocker.plist
 
       Edit the configuration at:
         #{etc}/usb-wakeup-blocker.conf
