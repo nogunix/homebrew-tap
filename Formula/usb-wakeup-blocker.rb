@@ -1,8 +1,8 @@
 class UsbWakeupBlocker < Formula
   desc "Prevent USB devices from waking your system from sleep"
   homepage "https://github.com/nogunix/usb-wakeup-blocker"
-  url "https://github.com/nogunix/usb-wakeup-blocker/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "a3f442b966ac54f37a9bfac864a1089b378f5ee553e1358366b2ad12bf2877e3"
+  url "https://github.com/nogunix/usb-wakeup-blocker/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "6b323a5744951d2b1a6c97040c528d35f0e9e13f9ec3d8374efd19414abcc3a5"
   license "MIT"
 
   depends_on "bash" => :build
